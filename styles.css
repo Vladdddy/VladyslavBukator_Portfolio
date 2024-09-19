@@ -132,7 +132,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid #ffffff;
+    border: 1.5px solid #9d9d9d2e;
     border-radius: 30px;
     margin: 50px 30px 20px 30px;
     padding: 10px;
@@ -165,19 +165,27 @@ body {
 
 .two h1 {
     color: #9d9d9d;
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 15px;
 }
 
 .two a {
     text-decoration: none;
     color: #7420ba;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 15px;
 }
 
+.gthub {
+    border: 2px solid #7420ba;
+    border-radius: 50px;
+    text-align: center;
+    padding: 8px;
+    margin: 30px 60px 0 60px;
+}
+
 .span-custom {
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 800;
     color: #ffffff;
 }
@@ -206,16 +214,26 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Kanit", sans-serif;
-    margin: 10px 0 10px 0;
-    gap: 10px;
+    margin: 20px;
+    gap: 20px;
+    border: 1.5 solid #9d9d9d2e;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 8px 8px 8px #9d9d9d2e;
 }
 
 .cert1 h1 {
     font-size: 20px;
 }
 
+.cert1 a {
+    text-decoration: none;
+    color: #7420ba;
+}
+
 .image .cert1-image {
-    width: 150px;
+    width: 80px;
+    height: 80px;
 }
 
 .information span {
