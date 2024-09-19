@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1e;
+}
+
+.sec1 {
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 25px;
+    margin-top: 20px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #7420ba;
+    font-size: 25px;
+}
+
+.custom {
+    height: 1.2px;
+    margin: 20px 30px 20px 30px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inconsolata", system-ui;
+    margin-top: 50px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph h1 {
+    margin-top: 15px;
+    font-size: 33px;
+    color: #f1f1f1;
+}
+
+.paragraph h3 {
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #9d9d9d;
+}
+
+.image img {
+    width: 200px;
+}
+
+.downloadcv {
+    border: 2px solid #7420ba;
+    border-radius: 50px;
+    text-align: center;
+    padding: 8px;
+    margin: 30px 60px 0 60px;
+}
+
+.downloadcv a {
+    text-decoration: none;
+    color: #7420ba;
+    font-size: 15px;
+}
+
+.sec2 {
+    height: auto;
+    margin-top: 100px;
+}
+
+.animation {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.animation.show {
+    top: 0;
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #ffffff;
+    border-radius: 30px;
+    margin: 50px 30px 20px 30px;
+    padding: 10px;
+    gap: 5px;
+    box-shadow: 8px 8px 10px #9d9d9d2e;
+}
+
+.container h1 {
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+.container p {
+    font-size: 14px;
+    color: #9d9d9d;
+}
+
+.image-cont {
+    margin-bottom: 5px;
+}
+
+.i {
+    width: 60px;
+}
+
+.sec3 {
+    height: auto;
+    margin-top: 100px;
+}
+
+.two h1 {
+    color: #9d9d9d;
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+.two a {
+    text-decoration: none;
+    color: #7420ba;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.span-custom {
+    font-size: 27px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.sec4 {
+    height: 100vh;
+    margin-top: 50px;
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.go-up {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    border-radius: 100px;
+    box-shadow: 8px 8px 10px #0000004d;
+    z-index: 10;
+    padding: 12px;
+    background-color: #7420ba;
+    opacity: 0.7;
+}
+
+.go-up img {
+    width: 30px;
+    height: 25px;
+}
