@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function () {
-    var ids = ['cont1', 'cont2', 'cont3', 'cont4', 'cont5'];
+    var ids = ['cont1', 'cont2', 'cont3', 'cont4'];
     var delay = 150;
 
     function toggleVisibility(elementId) {
