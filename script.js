@@ -49,3 +49,15 @@ document.addEventListener('DOMContentLoaded', function () {
         homeSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+
+
+
+
+
+document.getElementById('downloadButton').addEventListener('click', function () {
+    const link = document.createElement('a');
+    link.href = 'cv.pdf';
+    link.download = 'cv.pdf';
+    link.click();
+});
