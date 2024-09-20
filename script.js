@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function () {
-    var ids = ['cont1', 'cont2', 'cont3', 'cont4'];
+    var ids = ['cont1', 'cont2', 'cont3', 'cont4', 'cont5', 'cont6', 'cont7',];
     var delay = 150;
 
     function toggleVisibility(elementId) {
@@ -27,6 +27,11 @@ window.addEventListener('scroll', function () {
 });
 
 window.dispatchEvent(new Event('scroll'));
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const goUpButton = document.getElementById('goUp');
