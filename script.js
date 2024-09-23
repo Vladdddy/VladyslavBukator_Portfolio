@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.getElementById('downloadButton').addEventListener('click', function () {
     const link = document.createElement('a');
-    link.href = 'cv.pdf';
-    link.download = 'cv.pdf';
+    link.href = 'curriculum.pdf';
+    link.download = 'curriculum.pdf';
     link.click();
 });
