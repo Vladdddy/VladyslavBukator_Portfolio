@@ -91,14 +91,13 @@ body {
 }
 
 .downloadcv {
+    display: flex;
+    justify-content: center;
     border: 2px solid #7420ba;
     border-radius: 50px;
     text-align: center;
     padding: 8px;
     margin: 30px 60px 0 60px;
-}
-
-.downloadcv a {
     text-decoration: none;
     color: #7420ba;
     font-size: 15px;
@@ -179,11 +178,13 @@ body {
 }
 
 .gthub {
+    display: flex;
+    justify-content: center;
     border: 2px solid #7420ba;
     border-radius: 50px;
     text-align: center;
     padding: 8px;
-    margin: 30px 50px 0 50px;
+    margin: 30px 40px 0 40px;
 }
 
 .span-custom {
@@ -351,6 +352,7 @@ body {
     transition: opacity 0.5s ease;
     margin-top: 10vh;
     overflow-x: hidden;
+    display: none;
 }
 
 .imagecarousel {
@@ -411,7 +413,7 @@ body {
     border: 1.5px solid #9d9d9d2e;
     border-radius: 30px;
     margin: 10px;
-    padding: 10px 30px 10px 30px;
+    padding: 5px 25px 5px 25px;
     gap: 5px;
     box-shadow: 8px 8px 10px #9d9d9d2e;
 }
