@@ -40,12 +40,11 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    align-items: baseline;
-    gap: 40px;
+    align-items: center;
+    gap: 25px;
     margin: 18px;
     font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    border-bottom: 1.4px solid #7420ba;
+    font-weight: 400;
 }
 
 .nav a {
@@ -55,8 +54,40 @@ body {
     margin-bottom: 18px;
 }
 
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #7420ba;
+    border-radius: 50px;
+    text-align: center;
+    padding: 2px 15px 2px 15px;
+    gap: 5px;
+    background-color: #7420ba;
+}
+
+.home img {
+    width: 25px;
+}
+
+.otherdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.otherdiv img {
+    width: 25px;
+}
+
+.otherdiv p {
+    font-size: 18px;
+}
+
 .hr-custom {
-    height: 1.2px;
+    height: 1px;
     margin: 20px 30px 20px 30px;
 }
 
@@ -424,5 +455,5 @@ body {
 }
 
 .i-skills {
-    width: 70px;
+    width: 60px;
 }
