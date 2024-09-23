@@ -41,8 +41,8 @@ body {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 25px;
-    margin: 18px;
+    gap: 15px;
+    margin: 20px;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
 }
@@ -72,7 +72,7 @@ body {
 
 .otherdiv {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5px;
@@ -166,7 +166,7 @@ body {
     justify-content: center;
     border: 1.5px solid #9d9d9d2e;
     border-radius: 30px;
-    margin: 50px 30px 20px 30px;
+    margin: 50px 50px 20px 50px;
     padding: 10px;
     gap: 5px;
     box-shadow: 8px 8px 10px #9d9d9d2e;
@@ -178,7 +178,7 @@ body {
 }
 
 .container p {
-    font-size: 14px;
+    font-size: 12px;
     color: #9d9d9d;
 }
 
@@ -446,7 +446,7 @@ body {
     margin: 10px;
     padding: 5px 25px 5px 25px;
     gap: 5px;
-    box-shadow: 8px 8px 10px #9d9d9d2e;
+    box-shadow: 5px 5px 20px #9d9d9d2e;
 }
 
 .container-skills h1 {
@@ -456,4 +456,151 @@ body {
 
 .i-skills {
     width: 60px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    /*? NAVBAR ------------------------------------*/
+    .nav {
+        gap: 55px;
+        margin: 20px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: #7420ba;
+        font-size: 30px;
+    }
+
+    .home img {
+        width: 30px;
+    }
+
+    .otherdiv img {
+        width: 30px;
+    }
+
+    .otherdiv p {
+        font-size: 30px;
+    }
+
+    /*? PARAGRAPH ------------------------------------*/
+    .paragraph h1 {
+        margin-top: 15px;
+        font-size: 50px;
+    }
+
+    .paragraph h3 {
+        font-size: 30px;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: row;
+        font-size: 25px;
+    }
+
+    /*? DOWNLOAD CV ------------------------------------*/
+    .downloadcv {
+        padding: 10px;
+        margin: 30px 34rem 0 34rem;
+        font-size: 25px;
+    }
+
+    /*? CONTAINERS ------------------------------------*/
+    .dividerpc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .container {
+        margin: 100px 0 50px 0;
+        padding: 25px 40px 25px 40px;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container p {
+        font-size: 18px;
+    }
+
+    .i {
+        width: 80px;
+    }
+
+    /*? CONTAINERS ------------------------------------*/
+    .sec3 img {
+        width: 300px;
+        margin: 20px;
+    }
+
+    .two {
+        margin-top: -80px;
+    }
+
+    .two h1 {
+        font-size: 30px;
+    }
+
+    .two a {
+        font-size: 25px;
+    }
+
+    .gthub {
+        padding: 15px;
+    }
+
+    .span-custom {
+        font-size: 30px;
+    }
+
+
+
+
+
+
+    /*? CERTIFICATES ------------------------------------*/
+    .wsec4 {
+        font-size: 35px;
+    }
+
+    .cert1 {
+        margin: 20px 25rem 50px 25rem;
+    }
+
+    .cert1 h1 {
+        font-size: 30px;
+    }
+
+    .information p {
+        font-size: 20px;
+    }
+
+    .information a {
+        font-size: 20px;
+    }
+
+    .image .cert1-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .icon {
+        width: 60px;
+    }
+
+
+
 }
