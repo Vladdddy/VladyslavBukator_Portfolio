@@ -543,6 +543,7 @@ body {
         display: flex;
         flex-direction: row;
         font-size: 25px;
+        gap: 6px;
     }
 
     /*? DOWNLOAD CV ------------------------------------*/
