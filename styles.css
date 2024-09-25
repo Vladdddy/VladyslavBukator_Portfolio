@@ -836,3 +836,193 @@ body {
         font-size: 25px;
     }
 }
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) and (orientation: portrait) {
+
+    /*? NAVBAR ------------------------------------*/
+    .nav {
+        gap: 60px;
+        margin: 30px 30px 20px 30px;
+    }
+
+    .nav a {
+        font-size: 50px;
+    }
+
+    .home img {
+        width: 50px;
+    }
+
+    .otherdiv {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .otherdiv img {
+        width: 40px;
+    }
+
+    .otherdiv p {
+        font-size: 40px;
+    }
+
+    /*? PARAGRAPH ------------------------------------*/
+    .image img {
+        width: 250px;
+    }
+
+    .paragraph h1 {
+        font-size: 60px;
+    }
+
+    .paragraph h3 {
+        font-size: 40px;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        font-size: 35px;
+    }
+
+    /*? DOWNLOAD CV ------------------------------------*/
+
+    .downloadcv {
+        border: 3px solid #7420ba;
+        padding: 20px;
+        margin: 40px 15rem 0 15rem;
+        font-size: 30px;
+    }
+
+    /*? CONTAINERS ------------------------------------*/
+    .dividerpc {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 50px 10px 30px 10px;
+        padding: 40px 85px 40px 85px;
+        gap: 10px;
+        border-radius: 60px;
+    }
+
+    .container h1 {
+        font-size: 35px;
+    }
+
+    .container p {
+        font-size: 25px;
+    }
+
+    .i {
+        width: 100px;
+    }
+
+    /*? GITHUB ------------------------------------*/
+    .sec3 img {
+        width: 300px;
+        margin: 20px;
+    }
+
+    .two {
+        margin-top: -50px;
+    }
+
+    .two h1 {
+        font-size: 38px;
+    }
+
+    .two a {
+        font-size: 35px;
+    }
+
+    .gthub {
+        border: 3px solid #9238dc;
+        padding: 20px;
+    }
+
+    .span-custom {
+        font-size: 42px;
+    }
+
+    /*? CERTIFICATES ------------------------------------*/
+    .sec4 {
+        height: 70vh;
+    }
+
+    .wsec4 {
+        font-size: 40px;
+    }
+
+    .cert1 {
+        margin: 20px 4rem 60px 4rem;
+    }
+
+    .cert1 h1 {
+        font-size: 40px;
+    }
+
+    .information p {
+        font-size: 30px;
+    }
+
+    .information a {
+        font-size: 30px;
+    }
+
+    .image .cert1-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon {
+        width: 60px;
+    }
+
+    /*? FOOTER ------------------------------------*/
+    .contacts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contacts a {
+        font-size: 20px;
+    }
+
+    .ending {
+        font-size: 18px;
+    }
+
+    .footer img {
+        width: 20px;
+    }
+
+    .footer h1 {
+        font-size: 45px;
+    }
+
+    /*? SKILLS ------------------------------------*/
+    .hr-custom {
+        margin: 30px 5rem 20px 5rem;
+    }
+
+    .separator-skills {
+        flex-direction: row;
+    }
+
+    .container-skills {
+        flex-direction: column;
+        margin: 20px 0 20px 0;
+        gap: 15px;
+    }
+
+    .container-skills h1 {
+        font-size: 35px;
+    }
+
+    .i-skills {
+        width: 130px;
+    }
+}
