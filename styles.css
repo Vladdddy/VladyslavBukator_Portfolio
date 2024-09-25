@@ -36,6 +36,10 @@ body {
     height: auto;
 }
 
+.first-part {
+    display: none;
+}
+
 .nav {
     display: flex;
     justify-content: center;
@@ -68,6 +72,12 @@ body {
 
 .home img {
     width: 25px;
+}
+
+.second-part {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .otherdiv {
@@ -377,11 +387,11 @@ body {
     filter: brightness(100%);
 }
 
+/*
 .sec3-skills {
     height: auto;
     background: #0000004d;
     transition: opacity 0.5s ease;
-    margin-top: 10vh;
     overflow-x: hidden;
     display: none;
 }
@@ -391,22 +401,22 @@ body {
     display: flex;
     height: auto;
     width: fit-content;
-    animation: bannermove 12s linear infinite;
+    animation: bannermove 20s linear infinite;
 }
 
 .imagecarousel img {
-    margin: 0 5rem 0 17rem;
+    margin: 0 5rem 0 20rem;
     border-radius: 5px;
-    width: 3rem;
+    width: 5rem;
 }
 
 .box_container {
-    padding: 10px;
+    padding: 30px;
     overflow: hidden;
 }
 
 .cont {
-    margin-right: -12rem;
+    margin-right: 12rem;
 }
 
 @keyframes bannermove {
@@ -423,6 +433,7 @@ body {
     }
 
 }
+*/
 
 .sec4-skills {
     height: auto;
@@ -502,15 +513,40 @@ body {
 @media only screen and (min-width: 1024px) {
 
     /*? NAVBAR ------------------------------------*/
+    .first-part {
+        display: flex;
+    }
+
+    .first-part h1 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #f1f1f1
+    }
+
+    .span-navbar {
+        color: #7420ba;
+    }
+
+    .second-part {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
     .nav {
-        gap: 55px;
-        margin: 20px;
+        gap: 15px;
+        justify-content: space-around;
+        background-color: #0000004d;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 20px 60px 0 60px;
     }
 
     .nav a {
         text-decoration: none;
         color: #7420ba;
         font-size: 30px;
+        margin: 0;
     }
 
     .home img {
@@ -842,9 +878,14 @@ body {
 @media only screen and (min-width: 700px) and (max-width: 1024px) and (orientation: portrait) {
 
     /*? NAVBAR ------------------------------------*/
+    .first-part {
+        display: none;
+    }
+
     .nav {
         gap: 60px;
         margin: 30px 30px 20px 30px;
+        background-color: #00000000;
     }
 
     .nav a {
