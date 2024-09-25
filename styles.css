@@ -578,7 +578,7 @@ body {
         width: 80px;
     }
 
-    /*? CONTAINERS ------------------------------------*/
+    /*? GITHUB ------------------------------------*/
     .sec3 img {
         width: 300px;
         margin: 20px;
@@ -686,8 +686,153 @@ body {
 
 
 
-@media only screen and (max-width: 420px) {
-    body {
-        background-color: green;
+@media only screen and (max-width: 380px) {
+
+    /*? NAVBAR ------------------------------------*/
+    .nav {
+        gap: 20px;
+        margin: 20px 30px 20px 30px;
+    }
+
+    .nav a {
+        font-size: 20px;
+    }
+
+    .home img {
+        width: 20px;
+    }
+
+    .otherdiv {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .otherdiv img {
+        width: 20px;
+    }
+
+    .otherdiv p {
+        font-size: 20px;
+    }
+
+    /*? PARAGRAPH ------------------------------------*/
+    .paragraph h1 {
+        font-size: 28px;
+    }
+
+    .paragraph h3 {
+        font-size: 20px;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    /*? DOWNLOAD CV ------------------------------------*/
+    .downloadcv {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    /*? CONTAINERS ------------------------------------*/
+    .container {
+        margin: 30px 30px 0px 30px;
+        padding: 20px 25px 20px 25px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container p {
+        font-size: 12px;
+    }
+
+    .i {
+        width: 50px;
+    }
+
+    /*? GITHUB ------------------------------------*/
+    .sec3 img {
+        width: 150px;
+        margin: 20px;
+    }
+
+    .two {
+        margin-top: -30px;
+    }
+
+    .two h1 {
+        font-size: 18px;
+    }
+
+    .two a {
+        font-size: 15px;
+    }
+
+    .gthub {
+        padding: 10px;
+    }
+
+    .span-custom {
+        font-size: 20px;
+    }
+
+    /*? CERTIFICATES ------------------------------------*/
+    .sec4 {
+        height: 100vh;
+    }
+
+    .wsec4 {
+        font-size: 20px;
+    }
+
+    .cert1 {
+        margin: 10px 2rem 30px 2rem;
+    }
+
+    .cert1 h1 {
+        font-size: 20px;
+    }
+
+    .information p {
+        font-size: 16px;
+    }
+
+    .information a {
+        font-size: 16px;
+    }
+
+    .image .cert1-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    /*? FOOTER ------------------------------------*/
+    .contacts {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .contacts a {
+        font-size: 10px;
+    }
+
+    .ending {
+        font-size: 8px;
+    }
+
+    .footer img {
+        width: 10px;
+    }
+
+    .footer h1 {
+        font-size: 25px;
     }
 }
