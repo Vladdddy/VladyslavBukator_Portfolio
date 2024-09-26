@@ -177,7 +177,7 @@ body {
     border: 1.5px solid #9d9d9d2e;
     border-radius: 30px;
     margin: 50px 50px 20px 50px;
-    padding: 10px;
+    padding: 30px 20px 30px 20px;
     gap: 5px;
     box-shadow: 8px 8px 10px #9d9d9d2e;
 }
@@ -387,7 +387,7 @@ body {
     filter: brightness(100%);
 }
 
-/*
+/* CAROUSEL
 .sec3-skills {
     height: auto;
     background: #0000004d;
@@ -702,13 +702,14 @@ body {
     }
 
     .separator-skills {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .container-skills {
         flex-direction: column;
-        margin: 20px 30rem 20px 30rem;
-        gap: 15px;
+        gap: 25px;
+        margin: 10px 20px 30px 50px;
+        padding: 25px 65px 25px 65px;
     }
 
     .container-skills h1 {
@@ -716,7 +717,7 @@ body {
     }
 
     .i-skills {
-        width: 80px;
+        width: 100px;
     }
 }
 
