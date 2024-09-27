@@ -65,19 +65,24 @@ body {
     border: 2px solid #7420ba;
     border-radius: 50px;
     text-align: center;
-    padding: 2px 15px 2px 15px;
+    padding: 15px 15px 15px 15px;
     gap: 5px;
     background-color: #7420ba;
 }
 
 .home img {
-    width: 25px;
+    width: 30px;
+}
+
+.homediv p {
+    display: none;
+    ;
 }
 
 .second-part {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 20px;
 }
 
 .otherdiv {
@@ -93,7 +98,7 @@ body {
 }
 
 .otherdiv p {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .hr-custom {
@@ -535,11 +540,10 @@ body {
 
     .nav {
         gap: 15px;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: #00000020;
-        border-radius: 30px;
-        padding: 10px;
-        margin: 20px 60px 0 60px;
+        padding: 20px 60px 20px 60px;
+        margin: 0;
     }
 
     .nav a {
@@ -551,6 +555,14 @@ body {
 
     .home img {
         width: 30px;
+    }
+
+    .home {
+        padding: 5px 15px 2px 15px;
+    }
+
+    .homediv p {
+        display: flex;
     }
 
     .otherdiv img {
