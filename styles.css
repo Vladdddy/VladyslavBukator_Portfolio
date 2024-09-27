@@ -175,6 +175,7 @@ body {
     color: #f1f1f1;
     font-size: 16px;
     font-family: "Kanit", sans-serif;
+    margin-top: 50px;
 }
 
 .animation {
@@ -563,6 +564,7 @@ body {
         position: fixed;
         z-index: 20;
         width: calc(100vw - (100vw - 100%));
+        backdrop-filter: blur(8px);
     }
 
     .nav a {
@@ -604,6 +606,10 @@ body {
 
     .paragraph h3 {
         font-size: 30px;
+    }
+
+    .image img {
+        width: 300px;
     }
 
     .welcome {
@@ -760,9 +766,6 @@ body {
     .nav {
         gap: 20px;
         margin: 20px 30px 20px 30px;
-        background: #1b1b1ecc;
-        box-shadow: 0 8px 32px 0 #2f2f305e;
-        backdrop-filter: blur(10px);
     }
 
     .nav a {
@@ -918,9 +921,10 @@ body {
     }
 
     .nav {
-        gap: 60px;
-        margin: 30px 30px 20px 30px;
-        background-color: #00000000;
+        gap: 16px;
+        background-color: #00000020;
+        width: calc(100vw - (100vw - 100%));
+        backdrop-filter: blur(8px);
     }
 
     .nav a {
@@ -929,6 +933,10 @@ body {
 
     .home img {
         width: 50px;
+    }
+
+    .second-part {
+        gap: 70px;
     }
 
     .otherdiv {
