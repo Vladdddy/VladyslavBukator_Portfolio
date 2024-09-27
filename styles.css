@@ -7,6 +7,16 @@
     padding: 0;
 }
 
+button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -33,7 +43,7 @@ body {
 }
 
 .sec1 {
-    height: auto;
+    height: 10vh;
 }
 
 .first-part {
@@ -112,7 +122,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: "Inconsolata", system-ui;
-    margin-top: 50px;
+    margin-top: 0;
 }
 
 .image {
@@ -187,7 +197,7 @@ body {
     padding: 30px 20px 30px 20px;
     gap: 5px;
     background: #393939a7;
-    box-shadow: 0 8px 32px 0 #9d9d9da7;
+    box-shadow: 5px 5px 30px #9d9d9da7;
     backdrop-filter: blur(10px);
 }
 
@@ -232,7 +242,7 @@ body {
     justify-content: center;
     border-radius: 50px;
     text-align: center;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     margin: 30px 40px 0 40px;
     background: #a537ff60;
     box-shadow: 0 8px 32px 0 #2f2f305e;
@@ -249,7 +259,7 @@ body {
 .sec4 {
     height: 70vh;
     margin-top: 50px;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1c5;
 }
 
 .wsec4 {
@@ -275,7 +285,10 @@ body {
     border: 1.5 solid #9d9d9d2e;
     border-radius: 30px;
     padding: 10px;
-    box-shadow: 8px 8px 8px #9d9d9d2e;
+    box-shadow: 8px 8px 8px #2f2f3034;
+
+    background: #e3e3e394;
+    backdrop-filter: blur(10px);
 }
 
 .cert1 h1 {
@@ -302,7 +315,7 @@ body {
 
 .footer {
     height: auto;
-    background-color: #000000;
+    background-color: #000000dd;
 }
 
 .footer h1 {
@@ -496,8 +509,6 @@ body {
 
 .gthub:hover {
     background-color: #9238dc;
-    border: 2px solid #9238dc;
-    color: #f1f1f1;
 }
 
 
@@ -549,6 +560,9 @@ body {
         background-color: #00000020;
         padding: 20px 60px 20px 60px;
         margin: 0;
+        position: fixed;
+        z-index: 20;
+        width: calc(100vw - (100vw - 100%));
     }
 
     .nav a {
@@ -601,7 +615,7 @@ body {
 
     /*? DOWNLOAD CV ------------------------------------*/
     .downloadcv {
-        padding: 10px;
+        padding: 15px 10px 15px 10px;
         margin: 30px 34rem 0 34rem;
         font-size: 25px;
     }
@@ -650,7 +664,7 @@ body {
     }
 
     .gthub {
-        padding: 15px;
+        padding: 15px 40px 15px 40px;
     }
 
     .span-custom {
