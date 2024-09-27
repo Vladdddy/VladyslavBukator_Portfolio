@@ -398,6 +398,9 @@ body {
 }
 
 /*?----------------------------------------------*/
+.sec1-skills {
+    height: 10vh;
+}
 
 .sec2-skills {
     height: auto;
