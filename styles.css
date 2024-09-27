@@ -49,10 +49,6 @@ body {
     margin: 20px;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
-
-    background: #1b1b1ecc;
-    box-shadow: 0 8px 32px 0 #2f2f305e;
-    backdrop-filter: blur(10px);
 }
 
 .nav a {
@@ -70,8 +66,7 @@ body {
     text-align: center;
     padding: 15px 15px 15px 15px;
     gap: 5px;
-    background-color: #7420ba;
-    background: #7520ba6c;
+    background: #7420ba;
     box-shadow: 0 8px 32px 0 #2f2f305e;
     backdrop-filter: blur(10px);
 }
@@ -152,7 +147,7 @@ body {
     text-decoration: none;
     color: #f1f1f1;
     font-size: 15px;
-    background: #7520ba6c;
+    background: #a537ff60;
     box-shadow: 0 8px 32px 0 #2f2f305e;
     backdrop-filter: blur(10px);
 }
@@ -191,8 +186,8 @@ body {
     margin: 50px 50px 20px 50px;
     padding: 30px 20px 30px 20px;
     gap: 5px;
-    background: #9d9d9d2e;
-    box-shadow: 0 8px 32px 0 #9d9d9d2e;
+    background: #393939a7;
+    box-shadow: 0 8px 32px 0 #9d9d9da7;
     backdrop-filter: blur(10px);
 }
 
@@ -227,19 +222,22 @@ body {
 
 .two a {
     text-decoration: none;
-    color: #7420ba;
     font-size: 15px;
     margin-top: 15px;
+    color: #f1f1f1;
 }
 
 .gthub {
     display: flex;
     justify-content: center;
-    border: 2px solid #7420ba;
     border-radius: 50px;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     margin: 30px 40px 0 40px;
+    background: #a537ff60;
+    box-shadow: 0 8px 32px 0 #2f2f305e;
+    backdrop-filter: blur(10px);
+    color: #f1f1f1;
 }
 
 .span-custom {
@@ -748,6 +746,9 @@ body {
     .nav {
         gap: 20px;
         margin: 20px 30px 20px 30px;
+        background: #1b1b1ecc;
+        box-shadow: 0 8px 32px 0 #2f2f305e;
+        backdrop-filter: blur(10px);
     }
 
     .nav a {
