@@ -198,7 +198,7 @@ body {
     padding: 30px 20px 30px 20px;
     gap: 5px;
     background: #393939a7;
-    box-shadow: 5px 5px 30px #9d9d9da7;
+    box-shadow: 8px 8px 20px #9d9d9da7;
     backdrop-filter: blur(10px);
 }
 
@@ -249,6 +249,47 @@ body {
     box-shadow: 0 8px 32px 0 #2f2f305e;
     backdrop-filter: blur(10px);
     color: #f1f1f1;
+}
+
+.sec-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.project {
+    background-image: url(image/project1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px 20px 30px 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 13px #2c2c2ca5;
+}
+
+.project h1 {
+    color: #f1f1f1;
+    padding: 10px;
+}
+
+.project p {
+    color: #f1f1f1;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.blur-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    backdrop-filter: blur(2px);
+    background-color: #00000051;
+    padding: 5px 40px 5px 40px;
+    border-radius: 20px;
 }
 
 .span-custom {
@@ -515,7 +556,9 @@ body {
     background-color: #9238dc;
 }
 
-
+.go-up:hover {
+    background-color: #9238dc;
+}
 
 
 
