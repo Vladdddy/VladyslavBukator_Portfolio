@@ -793,14 +793,17 @@ body {
 
 .homediv a:hover {
     background-color: #9238dc;
+    transition: linear 0.2s;
 }
 
 .downloadcv:hover {
     background-color: #9238dc;
+    transition: linear 0.2s;
 }
 
 .gthub:hover {
     background-color: #9238dc;
+    transition: linear 0.2s;
 }
 
 .go-up:hover {
@@ -1418,4 +1421,8 @@ body {
 
 
 /* PHONE LANDSCAPE -----------------------------------*/
-@media only screen and (max-width: 767px) and (orientation: landscape) {}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    body {
+        background-color: green;
+    }
+}
