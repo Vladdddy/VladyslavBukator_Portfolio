@@ -1420,9 +1420,9 @@ body {
 }
 
 
-/* PHONE LANDSCAPE -----------------------------------*/
-@media only screen and (max-width: 767px) and (orientation: landscape) {
-    body {
+/* IPAD MINI -----------------------------------*/
+@media only screen and (min-width: 576px) and (max-width: 900px) {
+    .nav {
         background-color: green;
     }
 }
