@@ -465,6 +465,12 @@ body {
     margin-top: 15px;
 }
 
+.span-custom {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
 .gthub-button {
     display: flex;
     justify-content: center;
@@ -501,6 +507,12 @@ body {
     transition: all 0.3s;
 }
 
+.project h1 {
+    color: #f1f1f1;
+    padding: 10px;
+    font-size: 24px;
+}
+
 .photo1 {
     background-image: url(image/maga.png);
 }
@@ -511,12 +523,6 @@ body {
 
 .photo3 {
     background-image: url(image/anime.png);
-}
-
-.project h1 {
-    color: #f1f1f1;
-    padding: 10px;
-    font-size: 24px;
 }
 
 .blur-page {
@@ -533,12 +539,7 @@ body {
     gap: 20px;
 }
 
-.span-custom {
-    font-size: 20px;
-    font-weight: 800;
-    color: #ffffff;
-}
-
+/*---------------------------------------Certifications Section-------------------------------------------*/
 .sec4 {
     height: 70vh;
     margin-top: 50px;
@@ -595,6 +596,7 @@ body {
     width: 40px;
 }
 
+/*---------------------------------------Footer Section-------------------------------------------*/
 .footer {
     height: auto;
     background-color: #000000dd;
@@ -679,7 +681,7 @@ body {
     height: 25px;
 }
 
-/*?----------------------------------------------*/
+/*---------------------------------------Skills Section-------------------------------------------*/
 .sec1-skills {
     height: 10vh;
 }
@@ -697,54 +699,6 @@ body {
 .w-skills-icon {
     filter: brightness(100%);
 }
-
-/* CAROUSEL
-.sec3-skills {
-    height: auto;
-    background: #0000004d;
-    transition: opacity 0.5s ease;
-    overflow-x: hidden;
-    display: none;
-}
-
-.imagecarousel {
-    position: relative;
-    display: flex;
-    height: auto;
-    width: fit-content;
-    animation: bannermove 20s linear infinite;
-}
-
-.imagecarousel img {
-    margin: 0 5rem 0 20rem;
-    border-radius: 5px;
-    width: 5rem;
-}
-
-.box_container {
-    padding: 30px;
-    overflow: hidden;
-}
-
-.cont {
-    margin-right: 12rem;
-}
-
-@keyframes bannermove {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-33%);
-    }
-
-    100% {
-        transform: translateX(-67%);
-    }
-
-}
-*/
 
 .sec4-skills {
     height: auto;
@@ -782,7 +736,6 @@ body {
 
 
 /*! HOVER ------------------------------------------*/
-
 .home:hover {
     background-color: #9238dc;
     box-shadow: 0 0 20px #9238dc;
@@ -872,7 +825,6 @@ body {
 
 
 /*! RESPONSIVE ------------------------------------------*/
-
 /* LAPTOP -----------------------------------*/
 @media only screen and (min-width: 1024px) {
 
