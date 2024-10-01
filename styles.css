@@ -279,11 +279,13 @@ body {
     animation-delay: 73s;
 }
 
+/*-------------------------------------Navigation Bar Section-------------------------------------------*/
 .sec1 {
     height: 10vh;
+    user-select: none;
 }
 
-.first-part {
+.portfolio-logo {
     display: none;
     animation: bounce 1.5s;
 }
@@ -293,7 +295,6 @@ body {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
     margin: 20px;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
@@ -302,9 +303,25 @@ body {
 .nav a {
     text-decoration: none;
     color: #7420ba;
-    font-size: 23px;
-    margin-bottom: 18px;
+    font-size: 25px;
     animation: slideDown 0.5s linear;
+}
+
+.navbar-content {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-content a {
+    font-size: 25px;
+    gap: 10px;
+}
+
+.navbar-content-a {
+    transition: all 0.3s;
 }
 
 .home {
@@ -314,46 +331,32 @@ body {
     border-radius: 50px;
     text-align: center;
     padding: 15px 15px 15px 15px;
-    gap: 5px;
-    background: #7420ba;
-    box-shadow: 0 8px 32px 0 #2f2f305e;
-    backdrop-filter: blur(10px);
+    border: 2px solid #7420ba;
+    fill: #7420ba;
+    transition: all 0.3s;
 }
 
-.home img {
-    width: 30px;
+.home svg {
+    width: 35px;
 }
 
-.homediv p {
+.home p {
     display: none;
-    ;
 }
 
-.second-part {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+/*---------------------------------------About Me Section-------------------------------------------*/
+.sec2 {
+    height: auto;
+    margin-top: 50px;
 }
 
-.otherdiv {
+.image {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 5px;
 }
 
-.otherdiv img {
-    width: 25px;
-}
-
-.otherdiv p {
-    font-size: 22px;
-}
-
-.hr-custom {
-    height: 1px;
-    margin: 20px 30px 20px 30px;
+.image img {
+    width: 200px;
 }
 
 .paragraph {
@@ -362,11 +365,6 @@ body {
     align-items: center;
     font-family: "Inconsolata", system-ui;
     margin-top: 0;
-}
-
-.image {
-    display: flex;
-    justify-content: center;
 }
 
 .paragraph h1 {
@@ -380,10 +378,7 @@ body {
     font-size: 22px;
     font-weight: 700;
     color: #9d9d9d;
-}
-
-.image img {
-    width: 200px;
+    animation: slideLeft 1s;
 }
 
 .downloadcv {
@@ -394,16 +389,11 @@ body {
     padding: 10px;
     margin: 30px 60px 0 60px;
     text-decoration: none;
-    color: #f1f1f1;
+    color: #7420ba;
     font-size: 16px;
-    background: #a537ff60;
-    box-shadow: 0 8px 32px 0 #2f2f305e;
-    backdrop-filter: blur(10px);
-}
-
-.sec2 {
-    height: auto;
-    margin-top: 50px;
+    border: 2px solid #7420ba;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s;
 }
 
 .welcome {
@@ -415,16 +405,6 @@ body {
     font-size: 16px;
     font-family: "Kanit", sans-serif;
     margin-top: 50px;
-}
-
-.animation {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.animation.show {
-    top: 0;
-    opacity: 1;
 }
 
 .container {
@@ -459,35 +439,44 @@ body {
     width: 60px;
 }
 
+/*---------------------------------------Github Section-------------------------------------------*/
 .sec3 {
     height: auto;
     margin-top: 100px;
 }
 
-.two h1 {
+.workplace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inconsolata", system-ui;
+    margin-top: 0;
+}
+
+.workplace h1 {
     color: #9d9d9d;
     font-size: 20px;
     margin-top: 15px;
 }
 
-.two a {
+.workplace a {
     text-decoration: none;
     font-size: 16px;
     margin-top: 15px;
-    color: #f1f1f1;
 }
 
-.gthub {
+.gthub-button {
     display: flex;
     justify-content: center;
     border-radius: 50px;
     text-align: center;
     padding: 10px 50px 10px 50px;
     margin: 30px 60px 0 60px;
-    background: #a537ff60;
+    border: 2px solid #7420ba;
     box-shadow: 0 8px 32px 0 #2f2f305e;
-    backdrop-filter: blur(10px);
-    color: #f1f1f1;
+    backdrop-filter: blur(5px);
+    color: #7420ba;
+    transition: all 0.3s;
 }
 
 .sec-projects {
@@ -794,19 +783,29 @@ body {
 
 /*! HOVER ------------------------------------------*/
 
-.homediv a:hover {
+.home:hover {
     background-color: #9238dc;
-    transition: linear 0.2s;
+    box-shadow: 0 0 20px #9238dc;
+    fill: #f1f1f1;
+    color: #f1f1f1;
+}
+
+.navbar-content-a:hover {
+    transform: translateY(-10px);
+    color: #f1f1f1;
 }
 
 .downloadcv:hover {
     background-color: #9238dc;
-    transition: linear 0.2s;
+    box-shadow: 0 0 20px #9238dc;
+    color: #f1f1f1;
 }
 
-.gthub:hover {
+.gthub-button:hover {
     background-color: #9238dc;
-    transition: linear 0.2s;
+    box-shadow: 0 0 20px #9238dc;
+    fill: #f1f1f1;
+    color: #f1f1f1;
 }
 
 .go-up:hover {
@@ -815,13 +814,9 @@ body {
 }
 
 .project:hover {
-    box-shadow: 5px 5px 20px #bfbfbfa5;
+    box-shadow: 0 0 20px #f1f1f1;
     cursor: pointer;
     transform: translateY(-10px);
-}
-
-.blur-page:hover {
-    cursor: pointer;
 }
 
 
@@ -833,6 +828,16 @@ body {
 
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0);
     }
 }
 
@@ -855,6 +860,16 @@ body {
     }
 }
 
+.animation {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.animation.show {
+    top: 0;
+    opacity: 1;
+}
+
 
 /*! RESPONSIVE ------------------------------------------*/
 
@@ -862,11 +877,11 @@ body {
 @media only screen and (min-width: 1024px) {
 
     /*? NAVBAR ------------------------------------*/
-    .first-part {
+    .portfolio-logo {
         display: flex;
     }
 
-    .first-part h1 {
+    .portfolio-logo h1 {
         font-size: 50px;
         font-weight: 700;
         color: #f1f1f1
@@ -876,7 +891,7 @@ body {
         color: #7420ba;
     }
 
-    .second-part {
+    .navbar-content {
         display: flex;
         flex-direction: row;
         gap: 50px;
@@ -909,20 +924,12 @@ body {
         padding: 10px 30px 10px 30px;
     }
 
-    .homediv p {
+    .home p {
         display: flex;
     }
 
-    .otherdiv img {
-        width: 30px;
-    }
-
-    .otherdiv p {
+    .navbar-content p {
         font-size: 30px;
-    }
-
-    .otherdiv:hover {
-        opacity: 0.8;
     }
 
     /*? PARAGRAPH ------------------------------------*/
@@ -984,19 +991,19 @@ body {
         margin: 20px;
     }
 
-    .two {
+    .workplace {
         margin-top: -80px;
     }
 
-    .two h1 {
+    .workplace h1 {
         font-size: 30px;
     }
 
-    .two a {
+    .workplace a {
         font-size: 25px;
     }
 
-    .gthub {
+    .gthub-button {
         padding: 15px 40px 15px 40px;
     }
 
@@ -1117,16 +1124,12 @@ body {
         width: 20px;
     }
 
-    .otherdiv {
+    .navbar-content {
         flex-direction: column;
         gap: 0;
     }
 
-    .otherdiv img {
-        width: 20px;
-    }
-
-    .otherdiv p {
+    .navbar-content p {
         font-size: 20px;
     }
 
@@ -1175,19 +1178,19 @@ body {
         margin: 20px;
     }
 
-    .two {
+    .workplace {
         margin-top: -30px;
     }
 
-    .two h1 {
+    .workplace h1 {
         font-size: 18px;
     }
 
-    .two a {
+    .workplace a {
         font-size: 15px;
     }
 
-    .gthub {
+    .gthub-button {
         padding: 10px;
     }
 
@@ -1257,7 +1260,7 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
     /*? NAVBAR ------------------------------------*/
-    .first-part {
+    .portfolio-logo {
         display: none;
     }
 
@@ -1276,20 +1279,16 @@ body {
         width: 50px;
     }
 
-    .second-part {
+    .navbar-content {
         gap: 70px;
     }
 
-    .otherdiv {
+    .navbar-content {
         flex-direction: row;
         gap: 10px;
     }
 
-    .otherdiv img {
-        width: 40px;
-    }
-
-    .otherdiv p {
+    .navbar-content p {
         font-size: 40px;
     }
 
@@ -1351,19 +1350,19 @@ body {
         margin: 20px;
     }
 
-    .two {
+    .workplace {
         margin-top: -50px;
     }
 
-    .two h1 {
+    .workplace h1 {
         font-size: 38px;
     }
 
-    .two a {
+    .workplace a {
         font-size: 35px;
     }
 
-    .gthub {
+    .gthub-button {
         border: 3px solid #9238dc;
         padding: 20px;
     }
