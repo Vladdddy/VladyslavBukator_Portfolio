@@ -285,6 +285,7 @@ body {
 
 .first-part {
     display: none;
+    animation: bounce 1.5s;
 }
 
 .nav {
@@ -303,6 +304,7 @@ body {
     color: #7420ba;
     font-size: 23px;
     margin-bottom: 18px;
+    animation: slideDown 0.5s linear;
 }
 
 .home {
@@ -578,7 +580,6 @@ body {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 8px 8px 8px #2f2f3034;
-
     background: #e3e3e394;
     backdrop-filter: blur(10px);
 }
@@ -681,6 +682,7 @@ body {
     padding: 12px;
     background-color: #7420ba;
     opacity: 0.7;
+    transition: all 0.3s;
 }
 
 .go-up img {
@@ -809,6 +811,7 @@ body {
 
 .go-up:hover {
     background-color: #9238dc;
+    transform: translateY(-10px);
 }
 
 .project:hover {
@@ -822,6 +825,35 @@ body {
 }
 
 
+/*! ANIMATION ------------------------------------------*/
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
 
 
 /*! RESPONSIVE ------------------------------------------*/
