@@ -471,6 +471,16 @@ body {
     color: #ffffff;
 }
 
+.animation {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.animation.show {
+    top: 0;
+    opacity: 1;
+}
+
 .gthub-button {
     display: flex;
     justify-content: center;
@@ -543,7 +553,7 @@ body {
 .sec4 {
     height: 70vh;
     margin-top: 50px;
-    background-color: #f1f1f1c5;
+    background-color: #f1f1f1ca;
 }
 
 .wsec4 {
@@ -772,6 +782,9 @@ body {
     transform: translateY(-10px);
 }
 
+.no-hover {
+    pointer-events: none;
+}
 
 /*! ANIMATION ------------------------------------------*/
 @keyframes slideDown {
@@ -813,16 +826,6 @@ body {
     }
 }
 
-.animation {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.animation.show {
-    top: 0;
-    opacity: 1;
-}
-
 
 /*! RESPONSIVE ------------------------------------------*/
 /* LAPTOP -----------------------------------*/
@@ -859,6 +862,7 @@ body {
         z-index: 20;
         width: calc(100vw - (100vw - 100%));
         backdrop-filter: blur(8px);
+        box-shadow: 0 10px 20px #212121af;
     }
 
     .nav a {
@@ -922,19 +926,19 @@ body {
 
     .container {
         margin: 100px 0 50px 0;
-        padding: 25px 40px 25px 40px;
+        padding: 30px 50px 30px 50px;
     }
 
     .container h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .container p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .i {
-        width: 80px;
+        width: 60px;
     }
 
     /*? GITHUB ------------------------------------*/
