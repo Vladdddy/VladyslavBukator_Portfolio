@@ -569,6 +569,14 @@ body {
     background-image: url(image/anime.png);
 }
 
+.photo4 {
+    background-image: url(image/list.png);
+}
+
+.photo5 {
+    background-image: url(image/oldportfolio.png);
+}
+
 .blur-page {
     display: flex;
     justify-content: center;
