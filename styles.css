@@ -482,12 +482,6 @@ body {
     margin-top: 15px;
 }
 
-.workplace a {
-    text-decoration: none;
-    font-size: 16px;
-    margin-top: 15px;
-}
-
 .span-custom {
     font-size: 20px;
     font-weight: 800;
@@ -503,30 +497,6 @@ body {
     top: 0;
     opacity: 1;
     animation: slideDown 0.5s;
-}
-
-.gthub-button {
-    display: flex;
-    justify-content: center;
-    border-radius: 50px;
-    text-align: center;
-    padding: 10px 50px 10px 50px;
-    margin: 30px 60px 0 60px;
-    border: 2px solid var(--main-color);
-    box-shadow: 0 8px 32px 0 #2f2f305e;
-    backdrop-filter: blur(5px);
-    color: var(--main-color);
-    transition: all 0.3s;
-}
-
-.gthub-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gthub-image img {
-    width: 200px;
 }
 
 .sec-projects {
@@ -649,6 +619,102 @@ body {
     width: 40px;
 }
 
+/*---------------------------------------Contacts Section-------------------------------------------*/
+.contact-section {
+    height: auto;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.separator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    font-size: 10px;
+    gap: 5px;
+    border: 3px solid var(--main-color);
+    border-bottom: 0px solid transparent;
+    margin: 20px 5px 0 5px;
+    padding: 20px 5px 5px 5px;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--main-shadow-color);
+    box-shadow: 0 0 20px var(--main-shadow-color);
+}
+
+.separator a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 8px;
+    transition: all 0.3s;
+}
+
+.separator svg {
+    width: 10px;
+}
+
+.text-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 3px solid var(--main-color);
+    border-radius: 30px;
+    box-shadow: 0 0 20px var(--main-shadow-color);
+    margin: 0 20px 20px 20px;
+    gap: 10px;
+    box-shadow: 0 0 20px var(--main-shadow-color);
+    backdrop-filter: blur(10px);
+}
+
+.text-content input {
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid var(--main-color);
+    padding: 10px;
+    color: #f1f1f1;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+
+.text-content .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 80px 20px;
+}
+
+.text-content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-shadow-color);
+    box-shadow: 0 0 20px var(--main-shadow-color);
+    backdrop-filter: blur(5px);
+    color: var(--main-color);
+    transition: all 0.3s;
+    font-size: 14px;
+    gap: 5px;
+    color: #f1f1f1;
+}
+
+.text-content button svg {
+    width: 15px;
+}
+
 /*---------------------------------------Footer Section-------------------------------------------*/
 .footer {
     height: auto;
@@ -662,7 +728,6 @@ body {
     color: #f1f1f1;
     font-size: 25px;
     padding-top: 10px;
-    margin-bottom: 10px;
     font-family: "Inconsolata", system-ui;
 }
 
@@ -673,35 +738,12 @@ body {
     gap: 3px;
     color: #f1f1f1;
     font-size: 10px;
-    margin-top: 50px;
+    margin-top: 10px;
     padding-bottom: 10px;
 }
 
 .footer img {
     width: 10px;
-}
-
-.separator {
-    display: flex;
-    flex-direction: row;
-    color: #f1f1f1;
-    font-size: 10px;
-    gap: 3px;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    margin-top: 20px;
-}
-
-.contacts a {
-    text-decoration: none;
-    color: #f1f1f1;
-    transition: all 0.3s;
 }
 
 .ending {
@@ -838,8 +880,12 @@ body {
     transform: scale(0.9);
 }
 
-.contacts a:hover {
-    color: #9d9d9d;
+.contacts:hover {
+    fill: #9d9d9d;
+}
+
+.text-content button:hover {
+    transform: scale(0.9);
 }
 
 
@@ -1088,16 +1134,89 @@ body {
         width: 60px;
     }
 
+
     /*? FOOTER ------------------------------------*/
+    .contact-section {
+        height: auto;
+    }
+
     .contacts {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        align-content: center;
     }
 
-    .contacts a {
-        font-size: 15px;
+    .separator {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border: 3px solid var(--main-color);
+        border-bottom: 0px solid transparent;
+        margin: 20px 50px 0 50px;
+        padding: 50px 20px 20px 20px;
+        border-radius: 30px 30px 0 0;
+        background-color: var(--main-shadow-color);
+        box-shadow: 0 0 20px var(--main-shadow-color);
+    }
+
+    .separator a {
+        text-decoration: none;
+        color: #f1f1f1;
+        font-size: 16px;
+        transition: all 0.3s;
+    }
+
+    .separator svg {
+        width: 20px;
+    }
+
+    .text-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        border: 3px solid var(--main-color);
+        border-radius: 30px;
+        box-shadow: 0 0 20px var(--main-shadow-color);
+        margin: 0 18rem 20px 18rem;
+        gap: 10px;
+        box-shadow: 0 0 20px var(--main-shadow-color);
+        backdrop-filter: blur(10px);
+    }
+
+    .text-content input {
+        background-color: transparent;
+        border-radius: 30px;
+        border: 2px solid var(--main-color);
+        padding: 15px 50px 15px 50px;
+        color: #f1f1f1;
+        font-size: 12px;
+        transition: all 0.3s;
+    }
+
+    .text-content .message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 80px 120px 80px;
+    }
+
+    .text-content button {
+        border-radius: 30px;
+        padding: 10px 30px 10px 30px;
+        cursor: pointer;
+        transition: all 0.3s;
+        border: 2px solid var(--main-color);
+        box-shadow: 0 8px 32px 0 #2f2f305e;
+        backdrop-filter: blur(5px);
+        color: var(--main-color);
+        transition: all 0.3s;
+        background-color: transparent;
     }
 
     .ending {
