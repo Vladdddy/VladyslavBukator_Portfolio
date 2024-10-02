@@ -347,7 +347,7 @@ body {
 /*---------------------------------------About Me Section-------------------------------------------*/
 .sec2 {
     height: auto;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .image {
@@ -357,6 +357,11 @@ body {
 
 .image img {
     width: 200px;
+    border: 4px solid #7420ba;
+    box-shadow: 0 0 20px #9238dc;
+    backdrop-filter: blur(5px);
+    border-radius: 100%;
+    padding: 20px;
 }
 
 .paragraph {
@@ -371,6 +376,7 @@ body {
     margin-top: 15px;
     font-size: 33px;
     color: #f1f1f1;
+    animation: slideRight 1s;
 }
 
 .paragraph h3 {
@@ -495,6 +501,16 @@ body {
     transition: all 0.3s;
 }
 
+.gthub-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gthub-image img {
+    width: 200px;
+}
+
 .sec-projects {
     display: flex;
     flex-wrap: wrap;
@@ -593,7 +609,7 @@ body {
     color: #7420ba;
 }
 
-.image .cert1-image {
+.gthub-image .cert1-image {
     width: 80px;
     height: 80px;
 }
@@ -751,17 +767,19 @@ body {
     box-shadow: 0 0 20px #9238dc;
     fill: #f1f1f1;
     color: #f1f1f1;
+    transform: scale(0.9);
 }
 
 .navbar-content-a:hover {
-    transform: translateY(-10px);
     color: #f1f1f1;
+    transform: scale(0.9);
 }
 
 .downloadcv:hover {
     background-color: #9238dc;
     box-shadow: 0 0 20px #9238dc;
     color: #f1f1f1;
+    transform: scale(0.9);
 }
 
 .gthub-button:hover {
@@ -769,11 +787,13 @@ body {
     box-shadow: 0 0 20px #9238dc;
     fill: #f1f1f1;
     color: #f1f1f1;
+    transform: scale(0.9);
 }
 
 .go-up:hover {
     background-color: #9238dc;
     transform: translateY(-10px);
+    transform: scale(0.95);
 }
 
 .project:hover {
@@ -782,9 +802,6 @@ body {
     transform: translateY(-10px);
 }
 
-.no-hover {
-    pointer-events: none;
-}
 
 /*! ANIMATION ------------------------------------------*/
 @keyframes slideDown {
@@ -800,6 +817,16 @@ body {
 @keyframes slideLeft {
     from {
         transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100px);
     }
 
     to {
