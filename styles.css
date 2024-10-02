@@ -297,9 +297,6 @@ body {
     border: 2px solid var(--main-color);
     backdrop-filter: blur(5px);
     transition: all 0.3s;
-    background-color: var(--main-shadow-color);
-    box-shadow: 0 0 20px var(--main-shadow-color);
-    color: #f1f1f1;
 }
 
 .welcome {
@@ -592,14 +589,12 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     border: 2px solid var(--main-color);
-    background-color: var(--main-shadow-color);
-    box-shadow: 0 0 20px var(--main-shadow-color);
     backdrop-filter: blur(5px);
     color: var(--main-color);
+    background-color: transparent;
     transition: all 0.3s;
     font-size: 14px;
     gap: 5px;
-    color: #f1f1f1;
 }
 
 .text-content button svg {
@@ -738,14 +733,9 @@ body {
 
 .downloadcv:hover {
     transform: scale(0.9);
-}
-
-.gthub-button:hover {
     background-color: var(--main-shadow-color);
     box-shadow: 0 0 20px var(--main-shadow-color);
-    fill: #f1f1f1;
     color: #f1f1f1;
-    transform: scale(0.9);
 }
 
 .go-up:hover {
@@ -774,6 +764,9 @@ body {
 
 .text-content button:hover {
     transform: scale(0.9);
+    background-color: var(--main-shadow-color);
+    box-shadow: 0 0 20px var(--main-shadow-color);
+    color: #f1f1f1;
 }
 
 
@@ -1094,17 +1087,14 @@ body {
         justify-content: center;
         align-items: center;
         border-radius: 30px;
-        padding: 10px 30px 10px 30px;
+        padding: 15px 60px 15px 60px;
         cursor: pointer;
         transition: all 0.3s;
         border: 2px solid var(--main-color);
-        background-color: var(--main-shadow-color);
-        box-shadow: 0 0 20px var(--main-shadow-color);
         backdrop-filter: blur(5px);
         transition: all 0.3s;
-        font-size: 14px;
+        font-size: 18px;
         gap: 5px;
-        color: #f1f1f1;
         margin-top: 20px;
     }
 
