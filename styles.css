@@ -701,6 +701,7 @@ body {
 .contacts a {
     text-decoration: none;
     color: #f1f1f1;
+    transition: all 0.3s;
 }
 
 .ending {
@@ -837,6 +838,10 @@ body {
     transform: scale(0.9);
 }
 
+.contacts a:hover {
+    color: #9d9d9d;
+}
+
 
 /*! ANIMATION ------------------------------------------*/
 @keyframes slideDown {
@@ -944,7 +949,7 @@ body {
         margin: 0;
     }
 
-    .home img {
+    .home svg {
         width: 30px;
     }
 
@@ -1031,14 +1036,6 @@ body {
         font-size: 30px;
     }
 
-    .workplace a {
-        font-size: 25px;
-    }
-
-    .gthub-button {
-        padding: 15px 40px 15px 40px;
-    }
-
     .span-custom {
         font-size: 30px;
     }
@@ -1067,7 +1064,7 @@ body {
     }
 
     .cert1 {
-        margin: 20px 25rem 50px 25rem;
+        margin: 20px 30rem 50px 30rem;
     }
 
     .cert1 h1 {
@@ -1093,7 +1090,9 @@ body {
 
     /*? FOOTER ------------------------------------*/
     .contacts {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
     }
 
@@ -1148,21 +1147,17 @@ body {
         margin: 20px 30px 20px 30px;
     }
 
-    .nav a {
-        font-size: 20px;
-    }
-
     .home img {
-        width: 20px;
+        width: 10px;
     }
 
     .navbar-content {
-        flex-direction: column;
-        gap: 0;
+        flex-direction: row;
+        gap: 20px;
     }
 
     .navbar-content p {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     /*? PARAGRAPH ------------------------------------*/
@@ -1189,11 +1184,11 @@ body {
     /*? CONTAINERS ------------------------------------*/
     .container {
         margin: 30px 30px 0px 30px;
-        padding: 20px 25px 20px 25px;
+        padding: 20px 5px 20px 5px;
     }
 
     .container h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .container p {
@@ -1201,7 +1196,7 @@ body {
     }
 
     .i {
-        width: 50px;
+        width: 40px;
     }
 
     /*? GITHUB ------------------------------------*/
@@ -1215,19 +1210,11 @@ body {
     }
 
     .workplace h1 {
-        font-size: 18px;
-    }
-
-    .workplace a {
         font-size: 15px;
     }
 
-    .gthub-button {
-        padding: 10px;
-    }
-
     .span-custom {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /*? CERTIFICATES ------------------------------------*/
@@ -1289,11 +1276,11 @@ body {
 
 
 /* IPAD PRO -----------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     /*? NAVBAR ------------------------------------*/
     .portfolio-logo {
-        display: none;
+        display: flex;
     }
 
     .nav {
@@ -1303,25 +1290,21 @@ body {
         backdrop-filter: blur(8px);
     }
 
-    .nav a {
-        font-size: 50px;
-    }
-
     .home img {
         width: 50px;
     }
 
     .navbar-content {
-        gap: 70px;
-    }
-
-    .navbar-content {
         flex-direction: row;
-        gap: 10px;
+        gap: 20px;
     }
 
     .navbar-content p {
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .login {
+        display: none;
     }
 
     /*? PARAGRAPH ------------------------------------*/
@@ -1388,15 +1371,6 @@ body {
 
     .workplace h1 {
         font-size: 38px;
-    }
-
-    .workplace a {
-        font-size: 35px;
-    }
-
-    .gthub-button {
-        border: 3px solid var(--main-shadow-color);
-        padding: 20px;
     }
 
     .span-custom {
@@ -1486,7 +1460,106 @@ body {
 
 /* IPAD MINI -----------------------------------*/
 @media only screen and (min-width: 576px) and (max-width: 900px) {
-    /*.nav {
-        
-    }*/
+
+    /*? NAVBAR ------------------------------------*/
+    .portfolio-logo {
+        display: none;
+    }
+
+    .nav {
+        background-color: #f1f1f100;
+        backdrop-filter: blur(8px);
+    }
+
+    .home {
+        border: 3px solid var(--main-color);
+    }
+
+    .home svg {
+        width: 50px;
+    }
+
+    .navbar-content {
+        gap: 50px;
+    }
+
+    .navbar-content p {
+        font-size: 40px;
+    }
+
+    .login {
+        display: flex;
+    }
+
+    /*? PARAGRAPH ------------------------------------*/
+    .welcome {
+        font-size: 30px;
+    }
+
+    /*? DOWNLOAD CV ------------------------------------*/
+    .downloadcv {
+        margin: 40px 10rem 0 10rem;
+    }
+
+    /*? CONTAINERS ------------------------------------*/
+    .container {
+        margin: 50px 100px 80px 100px;
+        padding: 50px 5px 50px 5px;
+        gap: 10px;
+        border-radius: 60px;
+    }
+
+    .container h1 {
+        font-size: 35px;
+    }
+
+    .container p {
+        font-size: 25px;
+    }
+
+    .i {
+        width: 80px;
+    }
+
+    /*? GITHUB ------------------------------------*/
+    .sec3 img {
+        width: 300px;
+        margin: 20px;
+    }
+
+    .workplace {
+        margin-top: -10px;
+    }
+
+    .workplace h1 {
+        font-size: 34px;
+    }
+
+    .span-custom {
+        font-size: 42px;
+    }
+
+    .sec-projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 30px;
+        opacity: 0.9;
+    }
+
+    .project {
+        margin: 30px 20px 30px 20px;
+    }
+
+    .project h1 {
+        font-size: 30px;
+    }
+
+    .blur-page {
+        padding: 40px 20px 40px 20px;
+        width: 450px;
+        height: 200px;
+    }
 }
