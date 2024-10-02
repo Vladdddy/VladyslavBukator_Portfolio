@@ -279,6 +279,16 @@ body {
     animation-delay: 73s;
 }
 
+:root {
+    --main-color: #7420ba;
+    --main-shadow-color: #9238dc;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #f1f1f1;
+}
+
 /*-------------------------------------Navigation Bar Section-------------------------------------------*/
 .sec1 {
     height: 10vh;
@@ -302,7 +312,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #7420ba;
+    color: var(--main-color);
     font-size: 25px;
     animation: slideDown 0.5s linear;
 }
@@ -331,8 +341,8 @@ body {
     border-radius: 50px;
     text-align: center;
     padding: 15px 15px 15px 15px;
-    border: 2px solid #7420ba;
-    fill: #7420ba;
+    border: 2px solid var(--main-color);
+    fill: var(--main-color);
     transition: all 0.3s;
 }
 
@@ -344,6 +354,11 @@ body {
     display: none;
 }
 
+.login {
+    display: none;
+    transition: all 0.3s;
+}
+
 /*---------------------------------------About Me Section-------------------------------------------*/
 .sec2 {
     height: auto;
@@ -353,12 +368,13 @@ body {
 .image {
     display: flex;
     justify-content: center;
+    animation: blobIn 0.8s;
 }
 
 .image img {
     width: 200px;
-    border: 4px solid #7420ba;
-    box-shadow: 0 0 20px #9238dc;
+    border: 4px solid var(--main-color);
+    box-shadow: 0 0 20px var(--main-shadow-color);
     backdrop-filter: blur(5px);
     border-radius: 100%;
     padding: 20px;
@@ -395,9 +411,9 @@ body {
     padding: 10px;
     margin: 30px 60px 0 60px;
     text-decoration: none;
-    color: #7420ba;
+    color: var(--main-color);
     font-size: 16px;
-    border: 2px solid #7420ba;
+    border: 2px solid var(--main-color);
     backdrop-filter: blur(5px);
     transition: all 0.3s;
 }
@@ -422,18 +438,19 @@ body {
     margin: 50px 50px 20px 50px;
     padding: 30px 20px 30px 20px;
     gap: 5px;
-    background: #393939a7;
-    box-shadow: 8px 8px 20px #9d9d9da7;
-    backdrop-filter: blur(10px);
+    border: 2px solid #505050a7;
+    box-shadow: 15px 15px 15px #505050a7;
+    backdrop-filter: blur(5px);
+    font-weight: 600;
 }
 
 .container h1 {
-    font-size: 20px;
+    font-size: 22px;
     color: #f1f1f1;
 }
 
 .container p {
-    font-size: 12px;
+    font-size: 16px;
     color: #9d9d9d;
 }
 
@@ -479,12 +496,13 @@ body {
 
 .animation {
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: all 0.5s linear;
 }
 
 .animation.show {
     top: 0;
     opacity: 1;
+    animation: slideDown 0.5s;
 }
 
 .gthub-button {
@@ -494,10 +512,10 @@ body {
     text-align: center;
     padding: 10px 50px 10px 50px;
     margin: 30px 60px 0 60px;
-    border: 2px solid #7420ba;
+    border: 2px solid var(--main-color);
     box-shadow: 0 8px 32px 0 #2f2f305e;
     backdrop-filter: blur(5px);
-    color: #7420ba;
+    color: var(--main-color);
     transition: all 0.3s;
 }
 
@@ -527,7 +545,7 @@ body {
     background-size: cover;
     margin: 20px 20px 30px 20px;
     border-radius: 20px;
-    box-shadow: 5px 5px 20px #2c2c2ca5;
+    box-shadow: 15px 15px 15px #505050a7;
     text-decoration: none;
     font-family: "Kanit", sans-serif;
     transition: all 0.3s;
@@ -563,6 +581,7 @@ body {
     height: auto;
     border-radius: 20px;
     gap: 20px;
+    transition: all 0.3s;
 }
 
 /*---------------------------------------Certifications Section-------------------------------------------*/
@@ -596,7 +615,7 @@ body {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 8px 8px 8px #2f2f3034;
-    background: #e3e3e394;
+    background: #e3e3e3;
     backdrop-filter: blur(10px);
 }
 
@@ -606,7 +625,7 @@ body {
 
 .cert1 a {
     text-decoration: none;
-    color: #7420ba;
+    color: var(--main-color);
 }
 
 .gthub-image .cert1-image {
@@ -697,7 +716,7 @@ body {
     box-shadow: 8px 8px 10px #0000004d;
     z-index: 10;
     padding: 12px;
-    background-color: #7420ba;
+    background-color: var(--main-color);
     opacity: 0.7;
     transition: all 0.3s;
 }
@@ -763,8 +782,8 @@ body {
 
 /*! HOVER ------------------------------------------*/
 .home:hover {
-    background-color: #9238dc;
-    box-shadow: 0 0 20px #9238dc;
+    background-color: var(--main-shadow-color);
+    box-shadow: 0 0 20px var(--main-shadow-color);
     fill: #f1f1f1;
     color: #f1f1f1;
     transform: scale(0.9);
@@ -776,30 +795,38 @@ body {
 }
 
 .downloadcv:hover {
-    background-color: #9238dc;
-    box-shadow: 0 0 20px #9238dc;
+    background-color: var(--main-shadow-color);
+    box-shadow: 0 0 20px var(--main-shadow-color);
     color: #f1f1f1;
     transform: scale(0.9);
 }
 
 .gthub-button:hover {
-    background-color: #9238dc;
-    box-shadow: 0 0 20px #9238dc;
+    background-color: var(--main-shadow-color);
+    box-shadow: 0 0 20px var(--main-shadow-color);
     fill: #f1f1f1;
     color: #f1f1f1;
     transform: scale(0.9);
 }
 
 .go-up:hover {
-    background-color: #9238dc;
+    background-color: var(--main-shadow-color);
     transform: translateY(-10px);
     transform: scale(0.95);
 }
 
 .project:hover {
-    box-shadow: 0 0 20px #f1f1f1;
+    box-shadow: 15px 15px 15px #f1f1f155;
     cursor: pointer;
     transform: translateY(-10px);
+}
+
+.blur-page:hover {
+    background-color: #00000076;
+}
+
+.login:hover {
+    transform: scale(0.9);
 }
 
 
@@ -831,6 +858,16 @@ body {
 
     to {
         transform: translateX(0);
+    }
+}
+
+@keyframes blobIn {
+    from {
+        transform: scale(0.0);
+    }
+
+    to {
+        transform: scale(1);
     }
 }
 
@@ -870,7 +907,7 @@ body {
     }
 
     .span-navbar {
-        color: #7420ba;
+        color: var(--main-color);
     }
 
     .navbar-content {
@@ -894,7 +931,7 @@ body {
 
     .nav a {
         text-decoration: none;
-        color: #7420ba;
+        color: var(--main-color);
         font-size: 30px;
         margin: 0;
     }
@@ -913,6 +950,10 @@ body {
 
     .navbar-content p {
         font-size: 30px;
+    }
+
+    .login {
+        display: flex;
     }
 
     /*? PARAGRAPH ------------------------------------*/
@@ -1297,7 +1338,7 @@ body {
     /*? DOWNLOAD CV ------------------------------------*/
 
     .downloadcv {
-        border: 3px solid #7420ba;
+        border: 3px solid var(--main-color);
         padding: 20px;
         margin: 40px 15rem 0 15rem;
         font-size: 30px;
@@ -1346,7 +1387,7 @@ body {
     }
 
     .gthub-button {
-        border: 3px solid #9238dc;
+        border: 3px solid var(--main-shadow-color);
         padding: 20px;
     }
 
