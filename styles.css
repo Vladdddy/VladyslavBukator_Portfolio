@@ -682,58 +682,6 @@ body {
 /* WORK IN PROGRESS */
 
 
-/*! HOVER ------------------------------------------*/
-.home:hover {
-    background-color: var(--main-shadow-color);
-    box-shadow: 0 0 20px var(--main-shadow-color);
-    fill: #f1f1f1;
-    color: #f1f1f1;
-    transform: scale(0.9);
-}
-
-.navbar-content-a:hover {
-    color: #f1f1f1;
-    transform: scale(0.9);
-}
-
-.downloadcv:hover {
-    transform: scale(0.9);
-    background-color: var(--main-shadow-color);
-    box-shadow: 0 0 20px var(--main-shadow-color);
-    color: #f1f1f1;
-}
-
-.go-up:hover {
-    background-color: var(--main-shadow-color);
-    transform: translateY(-10px);
-    transform: scale(0.95);
-}
-
-.project:hover {
-    box-shadow: 15px 15px 15px #f1f1f155;
-    cursor: pointer;
-    transform: translateY(-10px);
-}
-
-.blur-page:hover {
-    background-color: #00000076;
-}
-
-.login:hover {
-    transform: scale(0.9);
-}
-
-.contacts:hover {
-    fill: #9d9d9d;
-}
-
-.text-content button:hover {
-    transform: scale(0.9);
-    background-color: var(--main-shadow-color);
-    box-shadow: 0 0 20px var(--main-shadow-color);
-    color: #f1f1f1;
-}
-
 
 /*! ANIMATION ------------------------------------------*/
 @keyframes slideDown {
@@ -1136,6 +1084,55 @@ body {
     .i-skills {
         width: 100px;
     }
+
+
+    /*! HOVER ------------------------------------------*/
+    .home:hover {
+        background-color: var(--main-shadow-color);
+        box-shadow: 0 0 20px var(--main-shadow-color);
+        fill: #f1f1f1;
+        color: #f1f1f1;
+        transform: scale(0.9);
+    }
+
+    .navbar-content-a:hover {
+        color: #f1f1f1;
+        transform: scale(0.9);
+    }
+
+    .downloadcv:hover {
+        transform: scale(0.9);
+        background-color: var(--main-shadow-color);
+        box-shadow: 0 0 20px var(--main-shadow-color);
+        color: #f1f1f1;
+    }
+
+    .go-up:hover {
+        background-color: var(--main-shadow-color);
+        transform: translateY(-10px);
+        transform: scale(0.95);
+    }
+
+    .project:hover {
+        box-shadow: 15px 15px 15px #f1f1f155;
+        cursor: pointer;
+        transform: translateY(-10px);
+    }
+
+    .blur-page:hover {
+        background-color: #00000076;
+    }
+
+    .login:hover {
+        transform: scale(0.9);
+    }
+
+    .text-content button:hover {
+        transform: scale(0.9);
+        background-color: var(--main-shadow-color);
+        box-shadow: 0 0 20px var(--main-shadow-color);
+        color: #f1f1f1;
+    }
 }
 
 
@@ -1344,7 +1341,7 @@ body {
 
     .navbar-content {
         flex-direction: row;
-        gap: 20px;
+        gap: 60px;
     }
 
     .navbar-content p {
@@ -1352,7 +1349,7 @@ body {
     }
 
     .login {
-        display: none;
+        display: flex;
     }
 
     /*? PARAGRAPH ------------------------------------*/
@@ -1544,7 +1541,7 @@ body {
 
 
 /* IPAD MINI AND IPAD AIR -----------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     /*? NAVBAR ------------------------------------*/
     .portfolio-logo {
@@ -1553,7 +1550,6 @@ body {
 
     .nav {
         background-color: #f1f1f100;
-        backdrop-filter: blur(8px);
     }
 
     .home {
@@ -1695,5 +1691,61 @@ body {
 
     .text-content button svg {
         width: 20px;
+    }
+}
+
+
+/* Hover effects on touch devices -----------------------------------*/
+@media only screen and (min-width: 10px) and (max-width: 1024px) {
+
+    /*! HOVER ------------------------------------------*/
+    .home:hover {
+        animation: buttonClick 0.3s;
+    }
+
+    .navbar-content-a:hover {
+        animation: colorChange 1s;
+    }
+
+    .downloadcv:hover {
+        animation: buttonClick 1s;
+    }
+
+    .go-up:hover {
+        animation: buttonClick 1s;
+    }
+
+    .text-content button:hover {
+        animation: buttonClick 1s;
+    }
+
+
+    @keyframes colorChange {
+        from {
+            color: #f1f1f1;
+        }
+
+        to {
+            color: var(--main-color);
+        }
+    }
+
+    @keyframes buttonClick {
+        from {
+            fill: #f1f1f1;
+            color: #f1f1f1;
+            background-color: var(--main-shadow-color);
+            box-shadow: 0 0 20px var(--main-shadow-color);
+            transform: scale(0.9);
+
+        }
+
+        to {
+            background-color: #ffffff00;
+            box-shadow: none;
+            transform: scale(1);
+            fill: var(--main-color);
+            color: var(--main-color);
+        }
     }
 }
