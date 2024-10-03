@@ -1117,6 +1117,15 @@ body {
         width: 15px;
     }
 
+    .social-title {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .social-containers svg {
+        width: 50px;
+    }
+
     .ending {
         font-size: 16px;
     }
