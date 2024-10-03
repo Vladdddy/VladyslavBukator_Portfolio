@@ -489,7 +489,7 @@ body {
 /*---------------------------------------Contacts Section-------------------------------------------*/
 .contact-section {
     height: auto;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 10px 0;
 }
 
 .contacts {
@@ -546,7 +546,7 @@ body {
     font-size: 30px;
     color: #9d9d9d;
     margin: 10px;
-    font-family: "Inconsolata", system-ui;
+    font-family: "Kanit", sans-serif;
 }
 
 .text-content input {
@@ -614,6 +614,32 @@ body {
 
 .text-content button svg {
     width: 15px;
+}
+
+.social-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #9d9d9d;
+    font-size: 20px;
+    font-family: "Inconsolata", system-ui;
+    font-weight: 700;
+}
+
+.social-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5px;
+    gap: 30px;
+    transition: all 0.3s;
+}
+
+.social-containers svg {
+    width: 40px;
+    fill: var(--main-color);
 }
 
 /*---------------------------------------Footer Section-------------------------------------------*/
@@ -781,6 +807,21 @@ body {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotateY(0.2turn);
+    }
+
+    100% {
+        transform: rotate(0);
+        transform: scale(1.2);
     }
 }
 
@@ -1140,6 +1181,12 @@ body {
         background-color: var(--main-shadow-color);
         box-shadow: 0 0 20px var(--main-shadow-color);
         color: #f1f1f1;
+    }
+
+    .social-containers svg:hover {
+        fill: #ffffff;
+        transform: scale(1.2);
+        animation: rotate 0.3s;
     }
 }
 
@@ -1717,14 +1764,22 @@ body {
         animation: buttonClick 1s;
     }
 
+    .social-containers svg:hover {
+        animation: colorChange 1s;
+    }
+
 
     @keyframes colorChange {
         from {
             color: #f1f1f1;
+            fill: #f1f1f1;
+            transform: scale(0.9);
         }
 
         to {
             color: var(--main-color);
+            fill: var(--main-color);
+            transform: scale(1);
         }
     }
 
