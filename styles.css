@@ -681,6 +681,33 @@ body {
 /*---------------------------------------Skills Section-------------------------------------------*/
 /* WORK IN PROGRESS */
 
+.sec2-skills {
+    height: 50vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inconsolata", system-ui;
+}
+
+.div-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div-skills img {
+    width: 100px;
+}
+
+.div-skills p {
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: 800;
+}
 
 
 /*! ANIMATION ------------------------------------------*/
@@ -1062,27 +1089,8 @@ body {
     }
 
     /*? SKILLS ------------------------------------*/
-    .hr-custom {
-        margin: 20px 18rem 20px 18rem;
-    }
-
-    .separator-skills {
-        flex-direction: row;
-    }
-
-    .container-skills {
-        flex-direction: column;
-        gap: 25px;
-        margin: 10px 20px 30px 50px;
-        padding: 25px 65px 25px 65px;
-    }
-
-    .container-skills h1 {
-        font-size: 30px;
-    }
-
-    .i-skills {
-        width: 100px;
+    .div-skills p {
+        font-size: 40px;
     }
 
 
@@ -1319,6 +1327,11 @@ body {
     .text-content button svg {
         width: 18px;
     }
+
+    /*? SKILLS ------------------------------------*/
+    .div-skills p {
+        font-size: 14px;
+    }
 }
 
 
@@ -1469,27 +1482,8 @@ body {
         font-size: 45px;
     }
 
-    /*? SKILLS ------------------------------------*/
-    .hr-custom {
-        margin: 30px 5rem 20px 5rem;
-    }
-
-    .separator-skills {
-        flex-direction: row;
-    }
-
-    .container-skills {
-        flex-direction: column;
-        margin: 20px 0 20px 0;
-        gap: 15px;
-    }
-
-    .container-skills h1 {
-        font-size: 35px;
-    }
-
-    .i-skills {
-        width: 130px;
+    .div-skills p {
+        font-size: 30px;
     }
 
     /*? CONTACT ------------------------------------*/
@@ -1643,6 +1637,10 @@ body {
         padding: 40px 20px 40px 20px;
         width: 450px;
         height: 200px;
+    }
+
+    .div-skills p {
+        font-size: 30px;
     }
 
     /*? CONTACT ------------------------------------*/
