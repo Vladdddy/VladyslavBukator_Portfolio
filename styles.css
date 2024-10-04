@@ -616,32 +616,6 @@ body {
     width: 15px;
 }
 
-.social-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    color: #9d9d9d;
-    font-size: 20px;
-    font-family: "Inconsolata", system-ui;
-    font-weight: 700;
-}
-
-.social-containers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 5px;
-    gap: 30px;
-    transition: all 0.3s;
-}
-
-.social-containers svg {
-    width: 40px;
-    fill: var(--main-color);
-}
-
 /*---------------------------------------Footer Section-------------------------------------------*/
 .footer {
     height: auto;
