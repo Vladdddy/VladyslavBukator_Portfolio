@@ -1797,6 +1797,7 @@ body {
 
 /* Burger Menu on Mobile -----------------------------------*/
 @media only screen and (min-width: 10px) and (max-width: 767px) {
+
     .nav {
         display: none;
     }
@@ -1809,7 +1810,7 @@ body {
         margin: 10px;
         padding: 10px;
         z-index: 10;
-        animation: slideDown 1s;
+        animation: slideDownMobile 1s;
     }
 
     .mobile-responsive-navbar svg,
@@ -1844,7 +1845,7 @@ body {
         transform: translateX(45vw);
         background-color: #00000068;
         backdrop-filter: blur(5px);
-        animation: background 2s;
+        animation: backgroundMobile 2s;
     }
 
     .side-content {
@@ -1861,7 +1862,8 @@ body {
         font-family: "Kanit", sans-serif;
         background-color: #00000068;
         backdrop-filter: blur(5px);
-        animation: slideLeft 1s;
+        animation: slideLeftMobile 1s;
+        overflow: hidden;
     }
 
     .side-content a {
@@ -1875,7 +1877,7 @@ body {
 
 
     /*-------------------------------Animation---------------------------------------*/
-    @keyframes slideLeft {
+    @keyframes slideLeftMobile {
         from {
             transform: translateX(1000px);
         }
@@ -1885,17 +1887,7 @@ body {
         }
     }
 
-    @keyframes slideRight {
-        from {
-            transform: translateX(-100px);
-        }
-
-        to {
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes slideDown {
+    @keyframes slideDownMobile {
         from {
             transform: translateY(-100px);
         }
@@ -1905,23 +1897,13 @@ body {
         }
     }
 
-    @keyframes background {
+    @keyframes backgroundMobile {
         from {
             background-color: transparent;
         }
 
         to {
             background-color: #00000068;
-        }
-    }
-
-    @keyframes touch {
-        from {
-            transform: scale(0.5);
-        }
-
-        to {
-            transform: scale(1);
         }
     }
 }
