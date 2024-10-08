@@ -226,6 +226,14 @@ body {
     fill: #f1f1f1;
 }
 
+.mobile-responsive-navbar {
+    display: none;
+}
+
+.side-navbar {
+    display: none;
+}
+
 /*---------------------------------------About Me Section-------------------------------------------*/
 .sec2 {
     height: auto;
@@ -1782,6 +1790,138 @@ body {
             transform: scale(1);
             fill: var(--main-color);
             color: var(--main-color);
+        }
+    }
+}
+
+
+/* Burger Menu on Mobile -----------------------------------*/
+@media only screen and (min-width: 10px) and (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+
+    .mobile-responsive-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        z-index: 10;
+        animation: slideDown 1s;
+    }
+
+    .mobile-responsive-navbar svg,
+    .side-navbar svg {
+        width: 3rem;
+        fill: var(--main-color);
+    }
+
+    .mobile-logo {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(20px, 20px);
+    }
+
+    .side-navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 10;
+    }
+
+    .side-menu {
+        display: none;
+        justify-content: flex-end;
+        margin: 10px;
+        padding: 10px;
+        z-index: 10;
+        width: 50vw;
+        transform: translateX(45vw);
+        background-color: #00000068;
+        backdrop-filter: blur(5px);
+        animation: background 2s;
+    }
+
+    .side-content {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin: -10px 10px;
+        padding: 10px;
+        z-index: 10;
+        width: 50vw;
+        transform: translateX(45vw);
+        font-family: "Kanit", sans-serif;
+        background-color: #00000068;
+        backdrop-filter: blur(5px);
+        animation: slideLeft 1s;
+    }
+
+    .side-content a {
+        text-decoration: none;
+        color: #f1f1f1;
+    }
+
+
+
+
+
+
+    /*-------------------------------Animation---------------------------------------*/
+    @keyframes slideLeft {
+        from {
+            transform: translateX(1000px);
+        }
+
+        to {
+            transform: translateX(45vw);
+        }
+    }
+
+    @keyframes slideRight {
+        from {
+            transform: translateX(-100px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100px);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes background {
+        from {
+            background-color: transparent;
+        }
+
+        to {
+            background-color: #00000068;
+        }
+    }
+
+    @keyframes touch {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
+            transform: scale(1);
         }
     }
 }

@@ -1,3 +1,28 @@
+const menu = document.getElementById("menu");
+const navbar = document.getElementById("navbar");
+const sideMenu = document.getElementById("sideMenu");
+const sideNavbar = document.getElementById("sideNavbar");
+const sideContent = document.getElementById("sideContent");
+const logo = document.getElementById("logo");
+
+menu.onclick = function () {
+    navbar.style.display = "none";
+    sideMenu.style.display = "flex";
+    sideNavbar.style.display = "flex";
+    logo.style.display = "flex";
+};
+
+sideMenu.onclick = function () {
+    navbar.style.display = "flex";
+    sideMenu.style.display = "none";
+    sideNavbar.style.display = "none";
+    logo.style.display = "none";
+};
+
+
+
+
+
 window.addEventListener('scroll', function () {
     var ids = ['cont1', 'cont2', 'cont3', 'cont4', 'cont5', 'cont6', 'cont7'];
     var delay = 150;
